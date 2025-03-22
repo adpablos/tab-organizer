@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Milestone 1: Basic Infrastructure (v0.1)",
+    "description": "Establish the core infrastructure including authentication, database, and basic user management.",
+    "state": "open"
+  },
+  {
+    "title": "Milestone 2: Functional Improvements (v0.2)",
+    "description": "Implement core functionality features like notes, improved tags, and basic search.",
+    "state": "open"
+  },
+  {
+    "title": "Milestone 3: Launch Preparation (v0.3)",
+    "description": "Prepare the application for deployment and initial launch, including configuration for Railway and Chrome Web Store.",
+    "state": "open"
+  },
+  {
+    "title": "Milestone 4: First Public Release (v1.0)",
+    "description": "Deploy the application to production and publish the extension in Chrome Web Store.",
+    "state": "open"
+  },
+  {
+    "title": "Milestone 5: First Major Update (v1.1)",
+    "description": "Implement advanced features like advanced search, device synchronization, and CI/CD pipeline.",
+    "state": "open"
+  }
+]

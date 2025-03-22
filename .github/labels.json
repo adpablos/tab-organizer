@@ -1,0 +1,67 @@
+[
+  {
+    "name": "feature",
+    "color": "0E8A16",
+    "description": "New functionality"
+  },
+  {
+    "name": "bug",
+    "color": "D73A4A",
+    "description": "Something isn't working"
+  },
+  {
+    "name": "infrastructure",
+    "color": "1D76DB",
+    "description": "Setup and configuration"
+  },
+  {
+    "name": "documentation",
+    "color": "0075CA",
+    "description": "Documentation related"
+  },
+  {
+    "name": "frontend",
+    "color": "FBCA04",
+    "description": "Related to the Chrome extension"
+  },
+  {
+    "name": "backend",
+    "color": "5319E7",
+    "description": "Related to the server"
+  },
+  {
+    "name": "database",
+    "color": "006B75",
+    "description": "Database related"
+  },
+  {
+    "name": "auth",
+    "color": "BFD4F2",
+    "description": "Authentication and security"
+  },
+  {
+    "name": "ui",
+    "color": "FEF2C0",
+    "description": "User interface"
+  },
+  {
+    "name": "testing",
+    "color": "25CCF7",
+    "description": "Testing and QA"
+  },
+  {
+    "name": "high-priority",
+    "color": "B60205",
+    "description": "High priority task"
+  },
+  {
+    "name": "medium-priority",
+    "color": "D93F0B",
+    "description": "Medium priority task"
+  },
+  {
+    "name": "low-priority",
+    "color": "FBCA04",
+    "description": "Low priority task"
+  }
+]
