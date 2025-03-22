@@ -28,8 +28,9 @@ tab-organizer/
 
 ## Requirements
 
-- Node.js (v14 or higher)
+- Node.js (v16 or higher)
 - npm or yarn
+- PostgreSQL (for production environment)
 - OpenAI account for API key
 
 ## Installation
@@ -38,7 +39,7 @@ tab-organizer/
 
 1. Configure environment variables:
    
-   ```
+   ```bash
    cd backend
    cp .env.example .env
    ```
@@ -47,14 +48,18 @@ tab-organizer/
 
 2. Install dependencies:
    
-   ```
+   ```bash
    npm install
    ```
 
 3. Start the server:
    
-   ```
-   node server.js
+   ```bash
+   # Development mode with auto-restart
+   npm run dev
+   
+   # Production mode
+   npm start
    ```
    
    The server will be available at `http://localhost:3000`.
@@ -63,11 +68,18 @@ For more details about the backend, including logging configuration, see [backen
 
 ### Chrome Extension
 
-1. In Chrome, open `chrome://extensions/`
-2. Activate "Developer mode"
-3. Click on "Load unpacked"
-4. Select the `extension` folder of the project
-5. The extension should appear in your toolbar
+1. Install dependencies:
+   
+   ```bash
+   cd extension
+   npm install
+   ```
+
+2. In Chrome, open `chrome://extensions/`
+3. Activate "Developer mode"
+4. Click on "Load unpacked"
+5. Select the `extension` folder of the project
+6. The extension should appear in your toolbar
 
 ## Usage
 
@@ -85,11 +97,49 @@ For more details about the backend, including logging configuration, see [backen
 
 ## Development
 
-To contribute to the project:
+### Environment Setup
 
-1. Clone the repository
-2. Make your changes
-3. Open a Pull Request
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/adpablos/tab-organizer.git
+   cd tab-organizer
+   ```
+
+2. Set up backend and extension as described in the Installation section
+
+3. Code Style and Linting:
+   ```bash
+   # Backend
+   cd backend
+   npm run lint      # Check for issues
+   npm run lint:fix  # Fix issues automatically
+   npm run format    # Format code with Prettier
+   
+   # Extension
+   cd extension
+   npm run lint
+   npm run lint:fix
+   npm run format
+   ```
+
+### Workflow
+
+1. Create a branch from the main branch following our naming convention:
+   ```bash
+   git checkout -b feature/issue-number-short-description
+   ```
+
+2. Make your changes and commit following our commit message format:
+   ```
+   [type]: #issue-number - Short description
+   
+   - Detailed change 1
+   - Detailed change 2
+   ```
+
+3. Push your branch and create a Pull Request
+
+For more detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 

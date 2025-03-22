@@ -1,0 +1,33 @@
+{
+  "name": "tab-organizer",
+  "version": "0.1.0",
+  "description": "A Chrome extension to organize and manage your tabs with AI assistance",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "extension"
+  ],
+  "scripts": {
+    "start:backend": "cd backend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "start:extension": "cd extension && echo 'Load the extension in Chrome using chrome://extensions/'",
+    "lint": "npm run lint:backend && npm run lint:extension",
+    "lint:backend": "cd backend && npm run lint",
+    "lint:extension": "cd extension && npm run lint",
+    "format": "npm run format:backend && npm run format:extension",
+    "format:backend": "cd backend && npm run format",
+    "format:extension": "cd extension && npm run format"
+  },
+  "keywords": [
+    "chrome-extension",
+    "tabs",
+    "ai",
+    "organization"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adpablos/tab-organizer.git"
+  }
+}
