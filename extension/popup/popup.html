@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tab Organizer</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Tab Organizer</h1>
+            <button id="saveTabBtn">Save Current Tab</button>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <div class="filter-options">
+                <select id="statusFilter">
+                    <option value="all">All</option>
+                    <option value="unread">Unread</option>
+                    <option value="read">Read</option>
+                    <option value="favorite">Favorites</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="linksList" class="links-list">
+            <!-- Links will be displayed here -->
+            <div class="loading" id="loading">Loading...</div>
+            <div class="empty-state" id="emptyState">No links saved yet</div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
